@@ -1,10 +1,9 @@
-version: "3.8"
+version: "3"
 services:
     api:
         container_name: api
         build:
             context: .
-            target: php
             args:
                 - APP_ENV=${APP_ENV}
         environment:
